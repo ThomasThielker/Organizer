@@ -89,6 +89,7 @@ namespace Organizer
             this.speichernUnterToolStripMenuItem.Name = "speichernUnterToolStripMenuItem";
             this.speichernUnterToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.speichernUnterToolStripMenuItem.Text = "speichern unter";
+            this.speichernUnterToolStripMenuItem.Click += new System.EventHandler(this.speichernUnterToolStripMenuItem_Click);
             // 
             // beendenToolStripMenuItem
             // 

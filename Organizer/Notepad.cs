@@ -64,5 +64,18 @@ namespace Organizer
             //File.Create(@"C:\Users\TThielker\Desktop\Notepad");
             //string fileName = System.IO.Path.GetRandomFileName();
         }
+
+        private void speichernUnterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();  // erzeugt eine neue Instanz sfd
+            sfd.Filter = "Textdateien (*.txt)|*.txt|Word Dokument (*.docx*)|*.docx|PDF Dokument(*.pdf *)|*.pdf"; //// "Text File*.txt|Word Dokument*.docx|";           
+            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string path = sfd.FileName;
+                BinaryWriter bw = new BinaryWriter(File.Create(path));
+                bw.Write(textBox1.Text);
+                bw.Dispose();
+            }
+        }
     }
 }
