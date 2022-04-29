@@ -67,34 +67,34 @@ namespace Organizer
             // neuToolStripMenuItem
             // 
             this.neuToolStripMenuItem.Name = "neuToolStripMenuItem";
-            this.neuToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.neuToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.neuToolStripMenuItem.Text = "neu";
             this.neuToolStripMenuItem.Click += new System.EventHandler(this.neuToolStripMenuItem_Click);
             // 
             // öffnenToolStripMenuItem1
             // 
             this.öffnenToolStripMenuItem1.Name = "öffnenToolStripMenuItem1";
-            this.öffnenToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.öffnenToolStripMenuItem1.Size = new System.Drawing.Size(235, 34);
             this.öffnenToolStripMenuItem1.Text = "öffnen";
             this.öffnenToolStripMenuItem1.Click += new System.EventHandler(this.öffnenToolStripMenuItem1_Click);
             // 
             // speichernToolStripMenuItem
             // 
             this.speichernToolStripMenuItem.Name = "speichernToolStripMenuItem";
-            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.speichernToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.speichernToolStripMenuItem.Text = "speichern";
             // 
             // speichernUnterToolStripMenuItem
             // 
             this.speichernUnterToolStripMenuItem.Name = "speichernUnterToolStripMenuItem";
-            this.speichernUnterToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.speichernUnterToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.speichernUnterToolStripMenuItem.Text = "speichern unter";
             this.speichernUnterToolStripMenuItem.Click += new System.EventHandler(this.speichernUnterToolStripMenuItem_Click);
             // 
             // beendenToolStripMenuItem
             // 
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.beendenToolStripMenuItem.Text = "beenden";
             this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
             // 
@@ -124,6 +124,7 @@ namespace Organizer
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Notepad";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Notizblock";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Notepad_FormClosing);
             this.Load += new System.EventHandler(this.Notepad_Load);

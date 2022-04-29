@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Organizer
 {
-    public partial class Form1 : Form   // aufgeteilt in mehrere Code Fragmente --> partial
+    public partial class Organizer : Form   // aufgeteilt in mehrere Code Fragmente --> partial
     {
-        public Form1()      // Konstruktor von Form1
+        public Organizer()      // Konstruktor von Form1
         {
             InitializeComponent();
+            
         }
 
         Calculator calc = new Calculator(); // Datentyp: Calculator Name: calc = mit "new" Schlüsselwort neues Objekt erzeugen 
@@ -35,5 +36,18 @@ namespace Organizer
         {
             Close();
         }
+
+        private void Organizer_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblHourMinute.Text = DateTime.Now.ToString("t");
+            lblDate.Text = DateTime.Now.ToString("dddd, dd MM yyyy");
+        }
+
+    
     }
 }

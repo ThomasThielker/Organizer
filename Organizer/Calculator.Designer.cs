@@ -406,6 +406,7 @@ namespace Organizer
             this.MinimumSize = new System.Drawing.Size(700, 400);
             this.Name = "Calculator";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
